@@ -1,0 +1,97 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DevTemplate>
+  <Settings>
+    <ZeroAddr>false</ZeroAddr>
+    <DecAddr>true</DecAddr>
+    <DefByteOrder2 />
+    <DefByteOrder4 />
+    <DefByteOrder8 />
+  </Settings>
+  <ElemGroups>
+    <ElemGroup active="true" tableType="Coils" address="0" name="COIL_REG">
+      <Elem name="MB_ELV_ALR_3_4" />
+      <Elem name="MB_ELV_ALR_ENC_3_4" />
+      <Elem name="MB_SHNK_ALR_4" />
+      <Elem name="MB_SHNK_ENC_ALR_4" />
+      <Elem name="MB_SHNK_SKL_ALR_4" />
+      <Elem name="MB_SHNK_SKL_ENC_ALR_4" />
+      <Elem name="MB_STAR_ALR_41" />
+      <Elem name="MB_STAR_ALR_42" />
+      <Elem name="MB_SEPR_ALR_4" />
+      <Elem name="MB_OIL_ST_ALR_4" />
+      <Elem name="MB_MILL_ALR_4" />
+      <Elem name="MB_FAN_ALR_4" />
+      <Elem name="MB_CONV_ALR_4" />
+      <Elem name="MB_VIBR_ALR_4" />
+      <Elem name="MB_MILL_ENC_ALR_4" />
+      <Elem name="MB_SEPR_ENC_ALR_4" />
+      <Elem name="MB_SHNK_ALR_3" />
+      <Elem name="MB_SHNK_ENC_ALR_3" />
+      <Elem name="MB_SHNK_SKL_ALR_3" />
+      <Elem name="MB_STAR_ALR_31" />
+      <Elem name="MB_STAR_ALR_32" />
+      <Elem name="MB_SEPR_ALR_3" />
+      <Elem name="MB_SEPR_ENC_ALR_3" />
+      <Elem name="MB_OIL_ST_ALR_3" />
+      <Elem name="MB_MILL_ALR_3" />
+      <Elem name="MB_FAN_ALR_3" />
+      <Elem name="MB_CONV_ALR_3" />
+      <Elem name="MB_VIBR_ALR_3" />
+      <Elem name="MB_MILL_ENC_ALR_3" />
+      <Elem name="MB_TANK_MIN_3_2" />
+      <Elem name="MB_TANK_MAX_3_2" />
+      <Elem name="MB_RESET" />
+      <Elem name="MB_ELV_RUN_3_2" />
+      <Elem name="MB_SHNK_RUN_4" />
+      <Elem name="MB_SHNK_SKL_RUN_4" />
+      <Elem name="MB_STAR_RUN_41" />
+      <Elem name="MB_STAR_RUN_42" />
+      <Elem name="MB_SEPR_RUN_4" />
+      <Elem name="MB_OIL_ST_RUN_4" />
+      <Elem name="MB_MILL_RUN_4" />
+      <Elem name="MB_FAN_RUN_4" />
+      <Elem name="MB_CONV_RUN_4" />
+      <Elem name="MB_VIBR_RUN_4" />
+      <Elem name="MB_VALV_RUN_4" />
+      <Elem name="MB_HORN_RUN_3_2" />
+      <Elem name="MB_MATER_FULL_4" />
+      <Elem name="MB_TANK_MIDLE" />
+      <Elem name="res1003" />
+      <Elem name="MB_SHNK_RUN_3" />
+      <Elem name="MB_SHNK_SKL_RUN_3" />
+      <Elem name="MB_STAR_RUN_31" />
+      <Elem name="MB_STAR_RUN_32" />
+      <Elem name="MB_SEPR_RUN_3" />
+      <Elem name="MB_OIL_ST_RUN_3" />
+      <Elem name="MB_MILL_RUN_3" />
+      <Elem name="MB_FAN_RUN_3" />
+      <Elem name="MB_CONV_RUN_3" />
+      <Elem name="MB_VIBR_RUN_3" />
+      <Elem name="MB_VALV_RUN_3" />
+      <Elem name="MB_MATER_FULL_3" />
+      <Elem name="" />
+      <Elem name="" />
+      <Elem name="" />
+      <Elem name="" />
+    </ElemGroup>
+    <ElemGroup active="true" tableType="HoldingRegisters" address="8" name="INPUT_REG">
+      <Elem name="REG_9_ELV_CURRENT_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_11_SHNK_CURRENT_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_13_MILL_SUCTION_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_15_SHNK_CURRENT_3" type="float" byteOrder="23016745" />
+      <Elem name="REG_17_MILL_SUCTION_3" type="float" byteOrder="23016745" />
+      <Elem name="REG_19_3_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_21_3_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_23_3_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_25_3_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_27_3_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_29_3_4" type="float" byteOrder="23016745" />
+      <Elem name="REG_31_3_4" type="float" byteOrder="23016745" />
+    </ElemGroup>
+  </ElemGroups>
+  <Cmds>
+    <Cmd tableType="Coils" multiple="false" address="1" cmdNum="2" name="cmd2" />
+    <Cmd tableType="Coils" multiple="false" address="2" cmdNum="3" name="cmd3" />
+    <Cmd tableType="Coils" multiple="false" address="31" cmdNum="32" name="MB_RESET_CMD" />
+  </Cmds>
+</DevTemplate>

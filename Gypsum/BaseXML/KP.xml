@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfKP xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <KP>
+    <KPNum>1</KPNum>
+    <Name>PLC_12</Name>
+    <KPTypeID>214</KPTypeID>
+    <Address>1</Address>
+    <CallNum>192.168.137.12</CallNum>
+    <CommLineNum>1</CommLineNum>
+    <Descr />
+  </KP>
+  <KP>
+    <KPNum>3</KPNum>
+    <Name>PLC_34</Name>
+    <KPTypeID>214</KPTypeID>
+    <Address>1</Address>
+    <CallNum>192.168.137.34</CallNum>
+    <CommLineNum>2</CommLineNum>
+    <Descr />
+  </KP>
+</ArrayOfKP>

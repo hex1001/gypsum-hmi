@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ArrayOfCtrlCnl xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <CtrlCnl>
+    <CtrlCnlNum>101</CtrlCnlNum>
+    <Active>true</Active>
+    <Name>PLC_34 - cmd2</Name>
+    <CmdTypeID>0</CmdTypeID>
+    <ObjNum>1</ObjNum>
+    <KPNum>3</KPNum>
+    <CmdNum>2</CmdNum>
+    <CmdValID xsi:nil="true" />
+    <FormulaUsed>false</FormulaUsed>
+    <Formula />
+    <EvEnabled>false</EvEnabled>
+  </CtrlCnl>
+  <CtrlCnl>
+    <CtrlCnlNum>102</CtrlCnlNum>
+    <Active>true</Active>
+    <Name>PLC_34 - cmd3</Name>
+    <CmdTypeID>0</CmdTypeID>
+    <ObjNum>1</ObjNum>
+    <KPNum>3</KPNum>
+    <CmdNum>3</CmdNum>
+    <CmdValID xsi:nil="true" />
+    <FormulaUsed>false</FormulaUsed>
+    <Formula />
+    <EvEnabled>false</EvEnabled>
+  </CtrlCnl>
+  <CtrlCnl>
+    <CtrlCnlNum>103</CtrlCnlNum>
+    <Active>true</Active>
+    <Name>PLC_34 - MB_RESET_CMD</Name>
+    <CmdTypeID>0</CmdTypeID>
+    <ObjNum>1</ObjNum>
+    <KPNum>3</KPNum>
+    <CmdNum>32</CmdNum>
+    <CmdValID xsi:nil="true" />
+    <FormulaUsed>false</FormulaUsed>
+    <Formula />
+    <EvEnabled>false</EvEnabled>
+  </CtrlCnl>
+</ArrayOfCtrlCnl>
