@@ -1637,6 +1637,48 @@
       <Url>http://localhost/Scada/View.aspx?viewID=2</Url>
       <ViewID>0</ViewID>
     </basic:Link>
+    <basic:Link>
+      <BackColor />
+      <BorderColor />
+      <BorderWidth>0</BorderWidth>
+      <ToolTip />
+      <ID>118</ID>
+      <Name />
+      <Location>
+        <X>637</X>
+        <Y>448</Y>
+      </Location>
+      <Size>
+        <Width>100</Width>
+        <Height>100</Height>
+      </Size>
+      <ZIndex>0</ZIndex>
+      <ForeColor />
+      <Font>
+        <Name>Verdana</Name>
+        <Size>20</Size>
+        <Bold>true</Bold>
+        <Italic>false</Italic>
+        <Underline>false</Underline>
+      </Font>
+      <Text>Вентиятор</Text>
+      <HAlign>Left</HAlign>
+      <VAlign>Top</VAlign>
+      <WordWrap>false</WordWrap>
+      <AutoSize>true</AutoSize>
+      <BackColorOnHover />
+      <BorderColorOnHover />
+      <ForeColorOnHover />
+      <UnderlineOnHover>true</UnderlineOnHover>
+      <CnlNums />
+      <PopupSize>
+        <Width>Normal</Width>
+        <Height>300</Height>
+      </PopupSize>
+      <Target>Self</Target>
+      <Url />
+      <ViewID>0</ViewID>
+    </basic:Link>
   </Components>
   <Images>
     <Image>

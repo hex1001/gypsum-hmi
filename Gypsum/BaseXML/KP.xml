@@ -5,7 +5,7 @@
     <Name>PLC_12</Name>
     <KPTypeID>214</KPTypeID>
     <Address>1</Address>
-    <CallNum>192.168.137.12</CallNum>
+    <CallNum>127.0.0.1</CallNum>
     <CommLineNum>1</CommLineNum>
     <Descr />
   </KP>
@@ -14,7 +14,7 @@
     <Name>PLC_34</Name>
     <KPTypeID>214</KPTypeID>
     <Address>1</Address>
-    <CallNum>192.168.137.34</CallNum>
+    <CallNum>127.0.0.1</CallNum>
     <CommLineNum>2</CommLineNum>
     <Descr />
   </KP>

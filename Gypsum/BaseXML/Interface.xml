@@ -35,4 +35,11 @@
     <Hidden>false</Hidden>
     <ObjNum xsi:nil="true" />
   </Interface>
+  <Interface>
+    <ItfID>6</ItfID>
+    <Name>АСОСИЙ\fan1.sch</Name>
+    <Descr>вентилятор1</Descr>
+    <Hidden>false</Hidden>
+    <ObjNum xsi:nil="true" />
+  </Interface>
 </ArrayOfInterface>

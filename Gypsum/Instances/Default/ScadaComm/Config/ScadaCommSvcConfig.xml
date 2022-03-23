@@ -35,7 +35,7 @@
         <Param name="TransMode" value="TCP" />
       </CustomParams>
       <ReqSequence>
-        <KP active="true" bind="true" number="1" name="PLC_12" dll="KpModbus.dll" address="1" callNum="192.168.137.12" timeout="1000" delay="500" time="00:00:00" period="00:00:00" cmdLine="KpModbus_NewTemplate_12.xml" />
+        <KP active="true" bind="true" number="1" name="PLC_12" dll="KpModbus.dll" address="1" callNum="127.0.0.1" timeout="1000" delay="500" time="00:00:00" period="00:00:00" cmdLine="KpModbus_NewTemplate_12.xml" />
       </ReqSequence>
     </CommLine>
     <!--Линия 2-->
@@ -46,7 +46,7 @@
         <Param name="Host" value="" />
         <Param name="ReconnectAfter" value="5" />
         <Param name="StayConnected" value="True" />
-        <Param name="TcpPort" value="503" />
+        <Param name="TcpPort" value="502" />
       </CommChannel>
       <LineParams>
         <Param name="ReqTriesCnt" value="3" descr="Количество попыток перезапроса КП при ошибке" />
@@ -59,7 +59,7 @@
         <Param name="TransMode" value="TCP" />
       </CustomParams>
       <ReqSequence>
-        <KP active="true" bind="true" number="3" name="PLC_34" dll="KpModbus.dll" address="1" callNum="192.168.137.34" timeout="1000" delay="200" time="00:00:00" period="00:00:00" cmdLine="KpModbus_NewTemplate_34.xml" />
+        <KP active="true" bind="true" number="3" name="PLC_34" dll="KpModbus.dll" address="1" callNum="127.0.0.1" timeout="1000" delay="200" time="00:00:00" period="00:00:00" cmdLine="KpModbus_NewTemplate_34.xml" />
       </ReqSequence>
     </CommLine>
   </CommLines>
