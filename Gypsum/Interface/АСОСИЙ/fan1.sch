@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<SchemeView title="">
+<SchemeView title="Вентилятор №1">
   <Scheme>
     <Version>5.3.1.1</Version>
     <Size>
@@ -16,7 +16,7 @@
       <Underline>false</Underline>
     </Font>
     <ForeColor>Black</ForeColor>
-    <Title />
+    <Title>Вентилятор №1</Title>
     <CnlFilter />
   </Scheme>
   <Components>
@@ -28,7 +28,7 @@
       <ID>97</ID>
       <Name />
       <Location>
-        <X>108</X>
+        <X>106</X>
         <Y>7</Y>
       </Location>
       <Size>
