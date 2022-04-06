@@ -1,0 +1,14 @@
+H:\project\C#\gypsum-hmi\microCalcium\bin\Debug\microCalcium.exe.config
+H:\project\C#\gypsum-hmi\microCalcium\bin\Debug\microCalcium.exe
+H:\project\C#\gypsum-hmi\microCalcium\bin\Debug\microCalcium.pdb
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\MainWindow.g.cs
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\App.g.cs
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium_MarkupCompile.cache
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium_MarkupCompile.lref
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\MainWindow.baml
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.g.resources
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.Properties.Resources.resources
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.csproj.GenerateResource.cache
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.csproj.CoreCompileInputs.cache
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.exe
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.pdb
