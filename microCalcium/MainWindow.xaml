@@ -4,11 +4,9 @@
         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:microCalcium"
-        mc:Ignorable="d"
-        AllowsTransparency="True"
-        WindowStyle="None"
+        mc:Ignorable="d"       
         Title="MainWindow" Height="900" Width="1440">
-   
+
     <Grid Background="#5c585c">
         <TabControl Background="#5c585c">
             <TabItem >
@@ -49,12 +47,12 @@
             <TabItem>
                 <TabItem.Header>
                     <StackPanel Orientation="Horizontal">
-                        <TextBlock Text="Тегирмон №4" Foreground="Aqua" />
+                        <TextBlock Text="Тегирмон №4" Foreground="Black" />
                     </StackPanel>
                 </TabItem.Header>
                 <Canvas Margin="0,0,0,0">
-                    <Image Source="./Resources/mill2_off_left.png" Canvas.Left="-20" Canvas.Top="281" Height="213" Width="386"/>
-                    <Image Source="./Resources/separ_off.png" Canvas.Left="37" Canvas.Top="148" Height="181" Width="252"/>
+                    <Image Source="./Resources/mill2_off_left.png" Canvas.Left="37" Canvas.Top="304" Height="212" Width="201" Stretch="Fill"/>
+                    <Image Source="./Resources/separ_off.png" Canvas.Left="27" Canvas.Top="208" Height="110" Width="205" Stretch="Fill"/>
                     <Button Content="Button" Height="100" Width="215" Canvas.Left="500" Canvas.Top="281" Click="Button_Click"/>
 
                 </Canvas>
