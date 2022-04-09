@@ -12,3 +12,4 @@ H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.csproj.GenerateReso
 H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.csproj.CoreCompileInputs.cache
 H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.exe
 H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.pdb
+H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\microCalcium.csproj.AssemblyReference.cache
