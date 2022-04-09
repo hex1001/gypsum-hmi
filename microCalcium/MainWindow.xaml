@@ -5,7 +5,9 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:microCalcium"
         mc:Ignorable="d"       
-        Title="MainWindow" Height="900" Width="1440">
+        Title="MainWindow" Height="900" Width="1440" Icon="options_icon.ico" WindowStyle="ThreeDBorderWindow"
+        Background="#5c585c"
+        >
 
     <Grid Background="#5c585c">
         <TabControl Background="#5c585c">
