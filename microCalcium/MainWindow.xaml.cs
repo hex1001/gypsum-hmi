@@ -27,5 +27,15 @@ namespace microCalcium
         private void Button_Click(object sender, RoutedEventArgs e) {
 
         }
+
+        private void Button_Click_1(object sender, RoutedEventArgs e)
+        {
+            Frame.Content = Page1.GetPage1();
+        }
+
+        private void Button_Click_2(object sender, RoutedEventArgs e)
+        {
+            Frame.Content = Page2.GetPage2();
+        }
     }
 }

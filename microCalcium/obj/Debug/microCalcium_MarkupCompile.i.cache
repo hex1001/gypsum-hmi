@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-H:\project\C#\gypsum-hmi\microCalcium\obj\Debug\
+H:\projects\gyps-plant2\microCalcium\obj\Debug\
 microCalcium
 none
 false
 DEBUG;TRACE
-H:\project\C#\gypsum-hmi\microCalcium\App.xaml
-11151548125
+H:\projects\gyps-plant2\microCalcium\App.xaml
+3-349979442
 
-6-1465360305
+886612250
 141737414579
-MainWindow.xaml;
+MainWindow.xaml;Page1.xaml;Page2.xaml;
 
 True
 
