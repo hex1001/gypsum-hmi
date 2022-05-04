@@ -1,0 +1,1937 @@
+<window name="Main" comment="Асосий экран" color="0x666666ff" type="0" windowheight="1075" windowwidth="1915" usepassword="false" password="" groupname="" subgroupname="" posx="-1000" posy="-1000" accesslevel="0">
+   <objects>
+      <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка1" posx="5.0" posy="93.0" width="475.0" height="975.0" angle="0" lock="true" color="0x000000ff" linewidth="2" fill="false" fillcolor="0x808080ff" inner="true">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка2" posx="482.0" posy="93.0" width="475.0" height="975.0" angle="0" lock="true" color="0x000000ff" linewidth="2" fill="false" fillcolor="0x808080ff" inner="true">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка4" posx="1433.0" posy="93.0" width="475.0" height="975.0" angle="0" lock="true" color="0x000000ff" linewidth="2" fill="false" fillcolor="0x808080ff" inner="true">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка3" posx="957.0" posy="93.0" width="475.0" height="975.0" angle="0" lock="true" color="0x000000ff" linewidth="2" fill="false" fillcolor="0x808080ff" inner="true">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SEPARATOR_3" posx="1021.0" posy="290.0" width="350.0" height="98.0" angle="0" lock="true" template="SEPARATORL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор холати" posx="1.0" posy="-12.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор ток кучи" posx="1.0" posy="14.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="280.0" posy="25.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор частотаси" posx="0.0" posy="45.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="280.0" posy="54.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор урнат част." posx="2.0" posy="76.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="280.0" posy="82.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SEPARATOR_2" posx="551.0" posy="290.0" width="350.0" height="98.0" angle="0" lock="true" template="SEPARATORL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор холати" posx="1.0" posy="-12.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор ток кучи" posx="1.0" posy="14.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="280.0" posy="25.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор частотаси" posx="0.0" posy="45.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="280.0" posy="54.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор урнат част." posx="2.0" posy="76.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="280.0" posy="82.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="FAN_4" posx="1509.0" posy="550.0" width="360.0" height="149.0" angle="0" lock="true" template="FANL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор холати" posx="0.0" posy="0.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="318.85714285714283" posy="0.0" width="26.74285714285714" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+               <udproperties/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор ток кучи" posx="0.0" posy="27.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="286.97142857142853" posy="27.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор частотаси" posx="0.0" posy="56.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="286.97142857142853" posy="56.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор урнат част." posx="0.0" posy="86.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="286.97142857142853" posy="86.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентил. №1 вакум" posx="0.0" posy="114.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентил. №1 вакум" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="suction_vaule" posx="286.97142857142853" posy="114.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 кПА" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SUCTION" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  кПА" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="FAN_3" posx="1021.0" posy="550.0" width="360.0" height="149.0" angle="0" lock="true" template="FANL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор холати" posx="0.0" posy="0.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="318.85714285714283" posy="0.0" width="26.74285714285714" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+               <udproperties/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор ток кучи" posx="0.0" posy="27.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="286.97142857142853" posy="27.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор частотаси" posx="0.0" posy="56.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="286.97142857142853" posy="56.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор урнат част." posx="0.0" posy="86.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="286.97142857142853" posy="86.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентил. №1 вакум" posx="0.0" posy="114.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентил. №1 вакум" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="suction_vaule" posx="286.97142857142853" posy="114.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 кПА" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SUCTION" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  кПА" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="FAN_2" posx="549.0" posy="550.0" width="360.0" height="149.0" angle="0" lock="true" template="FANL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор холати" posx="0.0" posy="0.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="318.85714285714283" posy="0.0" width="26.74285714285714" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+               <udproperties/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор ток кучи" posx="0.0" posy="27.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="286.97142857142853" posy="27.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор частотаси" posx="0.0" posy="56.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="286.97142857142853" posy="56.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор урнат част." posx="0.0" posy="86.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="286.97142857142853" posy="86.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентил. №1 вакум" posx="0.0" posy="114.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентил. №1 вакум" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="suction_vaule" posx="286.97142857142853" posy="114.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 кПА" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SUCTION" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  кПА" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="FAN_1" posx="72.0" posy="550.0" width="360.0" height="149.0" angle="0" lock="true" template="FANL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор холати" posx="0.0" posy="0.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="318.85714285714283" posy="0.0" width="26.74285714285714" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+               <udproperties/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор ток кучи" posx="0.0" posy="27.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="286.97142857142853" posy="27.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор частотаси" posx="0.0" posy="56.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="286.97142857142853" posy="56.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентилятор урнат част." posx="0.0" posy="86.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентилятор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="286.97142857142853" posy="86.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Вентил. №1 вакум" posx="0.0" posy="114.0" width="275.65714285714284" height="27.0" angle="0" lock="false" text="Вентил. №1 вакум" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="suction_vaule" posx="286.97142857142853" posy="114.0" width="102.85714285714285" height="27.0" angle="0" lock="false" text="0.0 кПА" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SUCTION" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  кПА" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="group_button" posx="0.0" posy="0.0" width="1915.0" height="90.0" angle="0" lock="false" template="header">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="bg_border_button" posx="0.0" posy="50.0" width="1911.0" height="40.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xffccccff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_Label" posx="1518.0" posy="55.0" width="358.0" height="33.0" angle="0" lock="false" text="Label" fonttype="0" fontsize="20" textplacement="1" textcolor="0x990000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="SystemCurrentDateTime" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="" decimalpos="0" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="border" posx="0.0" posy="0.0" width="1911.0" height="50.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xffccccff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_header" posx="781.1841418883672" posy="0.0" width="349.63484611371933" height="50.0" angle="0" lock="false" text="Э Л Е Р О Н" fonttype="0" fontsize="40" textplacement="1" textcolor="0x990000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_main" posx="6.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="Асосий" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="Main" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_1_2" posx="180.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="1-2 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_1_2" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_3_4" posx="354.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="3-4 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_3_4" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_drob" posx="528.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="дробилка" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_1_2" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_trends" posx="702.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="трендлар" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_1_2" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TEGIRMON_3" posx="1021.0" posy="160.0" width="350.0" height="108.0" angle="0" lock="true" template="TEGIRMONL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон холати" posx="0.0" posy="-16.0" width="270.0" height="46.0" angle="0" lock="false" text="Тегирмон холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="319.0" posy="0.0" width="26.0" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон ток кучи" posx="0.0" posy="16.0" width="268.0" height="46.0" angle="0" lock="false" text="Тегирмон ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="284.0" posy="30.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон частотаси" posx="0.0" posy="46.0" width="270.0" height="47.0" angle="0" lock="false" text="Тегирмон частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="284.0" posy="58.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тег. №1 урнат част." posx="-10.0" posy="76.0" width="290.0" height="47.0" angle="0" lock="false" text="Тегирмон урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="284.0" posy="87.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TEGIRMON_4" posx="1508.0" posy="160.0" width="350.0" height="108.0" angle="0" lock="true" template="TEGIRMONL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон холати" posx="0.0" posy="-16.0" width="270.0" height="46.0" angle="0" lock="false" text="Тегирмон холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="319.0" posy="0.0" width="26.0" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон ток кучи" posx="0.0" posy="16.0" width="268.0" height="46.0" angle="0" lock="false" text="Тегирмон ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="284.0" posy="30.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон частотаси" posx="0.0" posy="46.0" width="270.0" height="47.0" angle="0" lock="false" text="Тегирмон частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="284.0" posy="58.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тег. №1 урнат част." posx="-10.0" posy="76.0" width="290.0" height="47.0" angle="0" lock="false" text="Тегирмон урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="284.0" posy="87.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SEPARATOR_4" posx="1508.0" posy="290.0" width="350.0" height="98.0" angle="0" lock="true" template="SEPARATORL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор холати" posx="1.0" posy="-12.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор ток кучи" posx="1.0" posy="14.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="280.0" posy="25.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор частотаси" posx="0.0" posy="45.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="280.0" posy="54.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор урнат част." posx="2.0" posy="76.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="280.0" posy="82.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TEGIRMON_1" posx="80.0" posy="160.0" width="350.0" height="108.0" angle="0" lock="true" template="TEGIRMONL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон холати" posx="0.0" posy="-16.0" width="270.0" height="46.0" angle="0" lock="false" text="Тегирмон холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="319.0" posy="0.0" width="26.0" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон ток кучи" posx="0.0" posy="16.0" width="268.0" height="46.0" angle="0" lock="false" text="Тегирмон ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="284.0" posy="30.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон частотаси" posx="0.0" posy="46.0" width="270.0" height="47.0" angle="0" lock="false" text="Тегирмон частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="284.0" posy="58.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тег. №1 урнат част." posx="-10.0" posy="76.0" width="290.0" height="47.0" angle="0" lock="false" text="Тегирмон урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="284.0" posy="87.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TEGIRMON_2" posx="551.0" posy="160.0" width="350.0" height="108.0" angle="0" lock="true" template="TEGIRMONL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон холати" posx="0.0" posy="-16.0" width="270.0" height="46.0" angle="0" lock="false" text="Тегирмон холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="319.0" posy="0.0" width="26.0" height="26.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон ток кучи" posx="0.0" posy="16.0" width="268.0" height="46.0" angle="0" lock="false" text="Тегирмон ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="284.0" posy="30.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон частотаси" posx="0.0" posy="46.0" width="270.0" height="47.0" angle="0" lock="false" text="Тегирмон частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="284.0" posy="58.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тег. №1 урнат част." posx="-10.0" posy="76.0" width="290.0" height="47.0" angle="0" lock="false" text="Тегирмон урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="284.0" posy="87.0" width="104.0" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SEPARATOR_1" posx="79.0" posy="290.0" width="350.0" height="98.0" angle="0" lock="true" template="SEPARATORL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор холати" posx="1.0" posy="-12.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор ток кучи" posx="1.0" posy="14.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="280.0" posy="25.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор частотаси" posx="0.0" posy="45.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="280.0" posy="54.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Сепаратор урнат част." posx="2.0" posy="76.0" width="268.0" height="41.0" angle="0" lock="false" text="Сепаратор урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="280.0" posy="82.0" width="103.27868852459017" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="CONV_1" posx="79.0" posy="420.0" width="350.0" height="98.0" angle="0" lock="true" template="CONVL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр холати" posx="1.0" posy="-12.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр ток кучи" posx="1.0" posy="14.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="278.9230769230769" posy="25.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр частотаси" posx="0.0" posy="45.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="278.9230769230769" posy="54.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр урнат част." posx="2.0" posy="76.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="278.9230769230769" posy="82.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="CONV_2" posx="551.0" posy="420.0" width="350.0" height="98.0" angle="0" lock="true" template="CONVL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр холати" posx="1.0" posy="-12.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр ток кучи" posx="1.0" posy="14.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="278.9230769230769" posy="25.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр частотаси" posx="0.0" posy="45.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="278.9230769230769" posy="54.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр урнат част." posx="2.0" posy="76.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="278.9230769230769" posy="82.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="CONV_3" posx="1021.0" posy="420.0" width="350.0" height="98.0" angle="0" lock="true" template="CONVL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр холати" posx="1.0" posy="-12.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр ток кучи" posx="1.0" posy="14.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="278.9230769230769" posy="25.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр частотаси" posx="0.0" posy="45.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="278.9230769230769" posy="54.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр урнат част." posx="2.0" posy="76.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="278.9230769230769" posy="82.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="CONV_4" posx="1508.0" posy="420.0" width="350.0" height="98.0" angle="0" lock="true" template="CONVL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр холати" posx="1.0" posy="-12.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр холати" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="circle_sts" posx="315.0" posy="0.0" width="25.0" height="25.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xb3b3b3ff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xffff4dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр ток кучи" posx="1.0" posy="14.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр ток кучи" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="current_value" posx="278.9230769230769" posy="25.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 A" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_CURRENT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  A" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр частотаси" posx="0.0" posy="45.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр частотаси" fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="freq_vaule" posx="278.9230769230769" posy="54.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0xffff4dff" useborder="true" bordercolor="0x000000ff" linewidth="5" fill="true" fillcolor="0x000000ff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_FREQ" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Конвейр урнат част." posx="2.0" posy="76.0" width="267.0" height="41.0" angle="0" lock="false" text="Конвейр урнат част." fonttype="0" fontsize="25" textplacement="2" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="setpoint_value" posx="278.9230769230769" posy="82.0" width="102.3076923076923" height="27.0" angle="0" lock="false" text="0.0 Гц" fonttype="0" fontsize="25" textplacement="1" textcolor="0x990000ff" useborder="true" bordercolor="0x000000ff" linewidth="3" fill="true" fillcolor="0xffffffff" underline="false">
+               <property key="output">
+                  <property class="tesla.scada2.model.properties.OutputProperty" tagname="{group}_SETPOINT" title="Введите значение"/>
+               </property>
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="{group}_SETPOINT" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="  Гц" decimalpos="1" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VIBR_1" posx="10.0" posy="714.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="OIL_1" posx="169.0" posy="714.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNEK_1" posx="327.0" posy="714.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNEKi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Шнек " fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNK_SIKL_1" posx="327.0" posy="776.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNK_SIKLi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="14.0" posy="0.0" width="123.0" height="63.0" angle="0" lock="false" text="Шнек циклон" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №1" posx="164.0" posy="93.0" width="217.0" height="50.0" angle="0" lock="false" text="Тегирмон №1" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №2" posx="640.0" posy="93.0" width="217.0" height="50.0" angle="0" lock="false" text="Тегирмон №2" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №3" posx="1115.0" posy="93.0" width="217.0" height="50.0" angle="0" lock="false" text="Тегирмон №3" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №4" posx="1590.0" posy="93.0" width="217.0" height="50.0" angle="0" lock="false" text="Тегирмон №4" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+         <scripts/>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="STAR_11" posx="9.0" posy="776.0" width="150.0" height="63.0" angle="0" lock="false" template="STARi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Юлдузча №1" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="START_12" posx="169.0" posy="776.0" width="150.0" height="63.0" angle="0" lock="false" template="STARTi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Юлдузча №2" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VALV_1" posx="169.0" posy="833.0" width="150.0" height="63.0" angle="0" lock="false" template="VALVi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Пневмо клапан" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VIBR_2" posx="490.0" posy="713.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="OIL_2" posx="649.0" posy="713.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNEK_2" posx="807.0" posy="713.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNEKi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Шнек " fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNK_SIKL_2" posx="807.0" posy="776.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNK_SIKLi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="14.0" posy="0.0" width="123.0" height="63.0" angle="0" lock="false" text="Шнек циклон" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="STAR_21" posx="494.0" posy="776.0" width="150.0" height="63.0" angle="0" lock="false" template="STARi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Юлдузча №1" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="START_22" posx="649.0" posy="776.0" width="150.0" height="63.0" angle="0" lock="false" template="STARTi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Юлдузча №2" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VALV_2" posx="649.0" posy="834.0" width="150.0" height="63.0" angle="0" lock="false" template="VALVi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Пневмо клапан" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VIBR_3" posx="963.0" posy="716.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="OIL_3" posx="1121.0" posy="716.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNEK_3" posx="1281.0" posy="716.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNEKi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Шнек " fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNK_SIKL_3" posx="1280.0" posy="777.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNK_SIKLi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="14.0" posy="0.0" width="123.0" height="63.0" angle="0" lock="false" text="Шнек циклон" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="STAR_31" posx="963.0" posy="779.0" width="150.0" height="63.0" angle="0" lock="false" template="STARi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Юлдузча №1" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="START_32" posx="1121.0" posy="777.0" width="150.0" height="63.0" angle="0" lock="false" template="STARTi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Юлдузча №2" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VALV_3" posx="1121.0" posy="836.0" width="150.0" height="63.0" angle="0" lock="false" template="VALVi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Пневмо клапан" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VIBR_4" posx="1438.0" posy="713.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="OIL_4" posx="1596.0" posy="713.0" width="150.0" height="63.0" angle="0" lock="false" template="OIL">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Вибратор №3" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNEK_4" posx="1756.0" posy="713.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNEKi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Шнек " fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="SHNK_SIKL_4" posx="1754.0" posy="774.0" width="150.0" height="63.0" angle="0" lock="false" template="SHNK_SIKLi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="14.0" posy="0.0" width="123.0" height="63.0" angle="0" lock="false" text="Шнек циклон" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="STAR_41" posx="1438.0" posy="777.0" width="150.0" height="63.0" angle="0" lock="false" template="STARi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="11.0" posy="0.0" width="121.0" height="63.0" angle="0" lock="false" text="Юлдузча №1" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="START_42" posx="1596.0" posy="774.0" width="150.0" height="63.0" angle="0" lock="false" template="STARTi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Юлдузча №2" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="VALV_4" posx="1596.0" posy="833.0" width="150.0" height="63.0" angle="0" lock="false" template="VALVi">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.EllipseView" name="Ellipse" posx="0.0" posy="6.0" width="150.0" height="51.0" angle="0" lock="false" color="0xffffffff" linewidth="2" fill="true" fillcolor="0xccccccff">
+               <property key="fillcolor">
+                  <property class="tesla.scada2.model.properties.FillColorProperty" tagname="{group}_DIO" value="0" type="6" truecolor="0xff0000ff" falsecolor="0x008000ff">
+                     <colorrange>
+                        <colorRange from="0.0" to="0.0" color="0xccccccff"/>
+                        <colorRange from="1.0" to="1.0" color="0x336633ff"/>
+                        <colorRange from="2.0" to="3.0" color="0xcc3333ff"/>
+                        <colorRange from="4.0" to="7.0" color="0xe6e64dff"/>
+                     </colorrange>
+                  </property>
+               </property>
+               <property key="flash">
+                  <property class="tesla.scada2.model.properties.FlashProperty" tagname="{group}_DIO" value="0" type="6" trueflashduration="1000" falseflashduration="0">
+                     <durationrange>
+                        <durationRange from="2.0" to="7.0" duration="300"/>
+                     </durationrange>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_label" posx="16.0" posy="0.0" width="126.0" height="63.0" angle="0" lock="false" text="Пневмо клапан" fonttype="0" fontsize="15" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+   </objects>
+   <scriptnames/>
+</window>
