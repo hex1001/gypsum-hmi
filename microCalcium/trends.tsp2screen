@@ -1,0 +1,197 @@
+<window name="trendlar" color="0x393838ff" type="0" windowheight="1075" windowwidth="1912" usepassword="false" password="" groupname="" subgroupname="" posx="-1000" posy="-1000" accesslevel="0">
+   <objects>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="group_button" posx="0.0" posy="0.0" width="1912.0" height="90.0" angle="0" lock="false" template="header">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="bg_border_button" posx="0.0" posy="50.0" width="1908.0062663185379" height="40.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xffccccff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_Label" posx="1516.0354720918103" posy="55.0" width="358.06364110589465" height="33.0" angle="0" lock="false" text="Label" fonttype="0" fontsize="20" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <property key="textinput">
+                  <property class="tesla.scada2.model.properties.TextInputProperty" tagname="SystemCurrentDateTime" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="" decimalpos="0" beforedecimalpos="0">
+                     <textrange/>
+                  </property>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="border" posx="0.0" posy="0.0" width="1908.0062663185379" height="50.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xffccccff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_header" posx="779.9603547209181" posy="0.0" width="349.08711528429836" height="50.0" angle="0" lock="false" text="Э Л Е Р О Н" fonttype="0" fontsize="40" textplacement="1" textcolor="0x990000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_main" posx="5.990600522193212" posy="55.0" width="168.73524804177546" height="33.0" angle="0" lock="false" text="Асосий" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="Main" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_1_2" posx="181.52529994783518" posy="55.0" width="169.55659885237353" height="33.0" angle="0" lock="false" text="1-2 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_1_2" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_3_4" posx="356.0688575899844" posy="55.0" width="169.55659885237353" height="33.0" angle="0" lock="false" text="3-4 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_3_4" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_drob" posx="530.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="дробилка" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="drobilka" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_trends" posx="705.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="трендлар" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+               <property key="buttoncontrol">
+                  <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="trendlar" command=""/>
+               </property>
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TREND_1" posx="2.0" posy="105.0" width="955.0" height="470.0" angle="0" lock="false" template="TREND">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка5" posx="0.0" posy="0.0" width="950.0" height="470.00000000000006" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x666666ff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TrendView" name="trend_1" posx="5.0" posy="96.0" width="800.0" height="353.0" angle="0" lock="false" color="0x000000ff" linewidth="1" fill="true" fillcolor="0x4d4d4dff" gridcolor="0x808080ff" linestyle="Solid" gridlinewidth="1" horizontally="5" vertically="4" maximum="100.0" minimum="0.0" fontsize="10" markcolor="0x000000ff" timeformat="mm:ss" defaulttimeperiod="10">
+               <scripts/>
+               <curves>
+                  <curve tagname="FAN_1_CURRENT" curvename="Токи" linewidth="1" color="0x4d66ccff" type="0"/>
+                  <curve tagname="FAN_1_SUCTION" curvename="Разрежение" linewidth="1" color="0x804d80ff" type="0"/>
+                  <curve tagname="FAN_1_FREQ" curvename="Частота" linewidth="1" color="0xe64d4dff" type="0"/>
+                  <curve tagname="FAN_1_SETPOINT" curvename="Задания" linewidth="1" color="0xe6e64dff" type="0"/>
+               </curves>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №1" posx="67.0" posy="17.294372294372295" width="235.0" height="35.60606060606061" angle="0" lock="false" text="Тегирмон №1" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="border_names" posx="812.0" posy="91.0" width="130.0" height="322.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x000000ff" inner="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Частота" posx="816.0" posy="113.0" width="170.0" height="35.0" angle="0" lock="false" text="Частота" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe64d4dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Разрежение" posx="820.0" posy="259.4155844155844" width="170.0" height="35.60606060606061" angle="0" lock="false" text="Разреж." fonttype="0" fontsize="30" textplacement="0" textcolor="0x804d80ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Задания" posx="816.0" posy="210.0" width="170.0" height="35.0" angle="0" lock="false" text="Задания" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe6e64dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Токи" posx="816.0" posy="162.0" width="170.0" height="35.0" angle="0" lock="false" text="Токи" fonttype="0" fontsize="30" textplacement="0" textcolor="0x4d66ccff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TREND_3" posx="2.0" posy="585.0" width="955.0" height="470.0" angle="0" lock="false" template="TREND">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка5" posx="0.0" posy="0.0" width="950.0" height="470.00000000000006" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x666666ff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TrendView" name="trend_3" posx="5.0" posy="96.0" width="800.0" height="353.0" angle="0" lock="false" color="0x000000ff" linewidth="1" fill="true" fillcolor="0x4d4d4dff" gridcolor="0x808080ff" linestyle="Solid" gridlinewidth="1" horizontally="5" vertically="4" maximum="100.0" minimum="0.0" fontsize="10" markcolor="0x000000ff" timeformat="mm:ss" defaulttimeperiod="10">
+               <scripts/>
+               <curves>
+                  <curve tagname="FAN_3_CURRENT" curvename="Токи" linewidth="1" color="0x4d66ccff" type="0"/>
+                  <curve tagname="FAN_3_SUCTION" curvename="Разрежение" linewidth="1" color="0x804d80ff" type="0"/>
+                  <curve tagname="FAN_3_FREQ" curvename="Частота" linewidth="1" color="0xe64d4dff" type="0"/>
+                  <curve tagname="FAN_3_SETPOINT" curvename="Задания" linewidth="1" color="0xe6e64dff" type="0"/>
+               </curves>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №3" posx="67.0" posy="17.0" width="235.0" height="35.0" angle="0" lock="false" text="Тегирмон №3" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="border_names" posx="812.0" posy="91.0" width="130.0" height="322.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x000000ff" inner="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Частота" posx="816.0" posy="113.0" width="170.0" height="35.0" angle="0" lock="false" text="Частота" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe64d4dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Разрежение" posx="820.0" posy="259.4155844155844" width="170.0" height="35.60606060606061" angle="0" lock="false" text="Разреж." fonttype="0" fontsize="30" textplacement="0" textcolor="0x804d80ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Задания" posx="816.0" posy="210.0" width="170.0" height="35.0" angle="0" lock="false" text="Задания" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe6e64dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Токи" posx="816.0" posy="162.0" width="170.0" height="35.0" angle="0" lock="false" text="Токи" fonttype="0" fontsize="30" textplacement="0" textcolor="0x4d66ccff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TREND_2" posx="958.0" posy="105.0" width="955.0" height="470.0" angle="0" lock="false" template="TREND">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка5" posx="0.0" posy="0.0" width="950.0" height="470.00000000000006" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x666666ff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TrendView" name="trend_2" posx="5.0" posy="96.0" width="800.0" height="353.0" angle="0" lock="false" color="0x000000ff" linewidth="1" fill="true" fillcolor="0x4d4d4dff" gridcolor="0x808080ff" linestyle="Solid" gridlinewidth="1" horizontally="5" vertically="4" maximum="100.0" minimum="0.0" fontsize="10" markcolor="0x000000ff" timeformat="mm:ss" defaulttimeperiod="10">
+               <scripts/>
+               <curves>
+                  <curve tagname="FAN_2_CURRENT" curvename="Токи" linewidth="1" color="0x4d66ccff" type="0"/>
+                  <curve tagname="FAN_2_SUCTION" curvename="Разрежение" linewidth="1" color="0x804d80ff" type="0"/>
+                  <curve tagname="FAN_2_FREQ" curvename="Частота" linewidth="1" color="0xe64d4dff" type="0"/>
+                  <curve tagname="FAN_2_SETPOINT" curvename="Задания" linewidth="1" color="0xe6e64dff" type="0"/>
+               </curves>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №2" posx="67.0" posy="17.0" width="235.0" height="35.0" angle="0" lock="false" text="Тегирмон №2" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="border_names" posx="812.0" posy="91.0" width="130.0" height="322.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x000000ff" inner="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Частота" posx="816.0" posy="113.0" width="170.0" height="35.0" angle="0" lock="false" text="Частота" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe64d4dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Разрежение" posx="820.0" posy="259.4155844155844" width="170.0" height="35.60606060606061" angle="0" lock="false" text="Разреж." fonttype="0" fontsize="30" textplacement="0" textcolor="0x804d80ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Задания" posx="816.0" posy="210.0" width="170.0" height="35.0" angle="0" lock="false" text="Задания" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe6e64dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Токи" posx="816.0" posy="162.0" width="170.0" height="35.0" angle="0" lock="false" text="Токи" fonttype="0" fontsize="30" textplacement="0" textcolor="0x4d66ccff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="TREND_4" posx="958.0" posy="585.0" width="955.0" height="470.0" angle="0" lock="false" template="TREND">
+         <scripts/>
+         <objects>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="Рамка5" posx="0.0" posy="0.0" width="950.0" height="470.00000000000006" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x666666ff" inner="true">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TrendView" name="trend_4" posx="5.0" posy="96.0" width="800.0" height="353.0" angle="0" lock="false" color="0x000000ff" linewidth="1" fill="true" fillcolor="0x4d4d4dff" gridcolor="0x808080ff" linestyle="Solid" gridlinewidth="1" horizontally="5" vertically="4" maximum="100.0" minimum="0.0" fontsize="10" markcolor="0x000000ff" timeformat="mm:ss" defaulttimeperiod="10">
+               <scripts/>
+               <curves>
+                  <curve tagname="FAN_4_CURRENT" curvename="Токи" linewidth="1" color="0x4d66ccff" type="0"/>
+                  <curve tagname="FAN_4_SUCTION" curvename="Разрежение" linewidth="1" color="0x804d80ff" type="0"/>
+                  <curve tagname="FAN_4_FREQ" curvename="Частота" linewidth="1" color="0xe64d4dff" type="0"/>
+                  <curve tagname="FAN_4_SETPOINT" curvename="Задания" linewidth="1" color="0xe6e64dff" type="0"/>
+               </curves>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Тегирмон №4" posx="67.0" posy="17.0" width="235.0" height="35.0" angle="0" lock="false" text="Тегирмон №4" fonttype="0" fontsize="30" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.BorderView" name="border_names" posx="812.0" posy="91.0" width="130.0" height="322.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0x000000ff" inner="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Частота" posx="816.0" posy="113.0" width="170.0" height="35.0" angle="0" lock="false" text="Частота" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe64d4dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Разрежение" posx="820.0" posy="259.4155844155844" width="170.0" height="35.60606060606061" angle="0" lock="false" text="Разреж." fonttype="0" fontsize="30" textplacement="0" textcolor="0x804d80ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Задания" posx="816.0" posy="210.0" width="170.0" height="35.0" angle="0" lock="false" text="Задания" fonttype="0" fontsize="30" textplacement="0" textcolor="0xe6e64dff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+            <objectView class="tesla.scada2.model.objects.TextView" name="Токи" posx="816.0" posy="162.0" width="170.0" height="35.0" angle="0" lock="false" text="Токи" fonttype="0" fontsize="30" textplacement="0" textcolor="0x4d66ccff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+               <scripts/>
+            </objectView>
+         </objects>
+      </objectView>
+   </objects>
+   <scriptnames/>
+</window>
