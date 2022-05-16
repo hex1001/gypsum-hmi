@@ -1,12 +1,12 @@
 <window name="trendlar" color="0x393838ff" type="0" windowheight="1075" windowwidth="1912" usepassword="false" password="" groupname="" subgroupname="" posx="-1000" posy="-1000" accesslevel="0">
    <objects>
-      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="group_button" posx="0.0" posy="0.0" width="1912.0" height="90.0" angle="0" lock="false" template="header">
+      <objectView class="tesla.scada2.model.objects.GroupObjectView" name="group_button" posx="0.0" posy="0.0" width="1908.0" height="88.0" angle="0" lock="false" template="header">
          <scripts/>
          <objects>
-            <objectView class="tesla.scada2.model.objects.BorderView" name="bg_border_button" posx="0.0" posy="50.0" width="1908.0062663185379" height="40.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xffccccff" inner="true">
+            <objectView class="tesla.scada2.model.objects.BorderView" name="bg_border_button" posx="0.0" posy="0.0" width="1908.0" height="40.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xffccccff" inner="true">
                <scripts/>
             </objectView>
-            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_Label" posx="1516.0354720918103" posy="55.0" width="358.06364110589465" height="33.0" angle="0" lock="false" text="Label" fonttype="0" fontsize="20" textplacement="1" textcolor="0xffffffff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
+            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_Label" posx="1517.0" posy="0.0" width="358.0" height="33.0" angle="0" lock="false" text="00:00:00" fonttype="0" fontsize="20" textplacement="1" textcolor="0x000000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
                <property key="textinput">
                   <property class="tesla.scada2.model.properties.TextInputProperty" tagname="SystemCurrentDateTime" value="0" type="0" truetext="" falsetext="" textbefore="" textafter="" decimalpos="0" beforedecimalpos="0">
                      <textrange/>
@@ -14,37 +14,31 @@
                </property>
                <scripts/>
             </objectView>
-            <objectView class="tesla.scada2.model.objects.BorderView" name="border" posx="0.0" posy="0.0" width="1908.0062663185379" height="50.0" angle="0" lock="false" color="0x000000ff" linewidth="2" fill="true" fillcolor="0xffccccff" inner="true">
-               <scripts/>
-            </objectView>
-            <objectView class="tesla.scada2.model.objects.TextView" name="{group}_header" posx="779.9603547209181" posy="0.0" width="349.08711528429836" height="50.0" angle="0" lock="false" text="Э Л Е Р О Н" fonttype="0" fontsize="40" textplacement="1" textcolor="0x990000ff" useborder="false" bordercolor="0x000000ff" linewidth="2" fill="false" fillcolor="0xffffffff" underline="false">
-               <scripts/>
-            </objectView>
-            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_main" posx="5.990600522193212" posy="55.0" width="168.73524804177546" height="33.0" angle="0" lock="false" text="Асосий" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_main" posx="5.0" posy="4.0" width="168.0" height="33.0" angle="0" lock="false" text="Асосий" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
                <property key="buttoncontrol">
                   <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="Main" command=""/>
                </property>
                <scripts/>
             </objectView>
-            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_1_2" posx="181.52529994783518" posy="55.0" width="169.55659885237353" height="33.0" angle="0" lock="false" text="1-2 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_1_2" posx="182.0" posy="4.0" width="169.0" height="33.0" angle="0" lock="false" text="1-2 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
                <property key="buttoncontrol">
                   <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_1_2" command=""/>
                </property>
                <scripts/>
             </objectView>
-            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_3_4" posx="356.0688575899844" posy="55.0" width="169.55659885237353" height="33.0" angle="0" lock="false" text="3-4 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_3_4" posx="357.0" posy="4.0" width="169.0" height="33.0" angle="0" lock="false" text="3-4 тегирмон" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
                <property key="buttoncontrol">
                   <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="MILL_3_4" command=""/>
                </property>
                <scripts/>
             </objectView>
-            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_drob" posx="530.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="дробилка" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_drob" posx="530.0" posy="4.0" width="169.0" height="33.0" angle="0" lock="false" text="дробилка" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
                <property key="buttoncontrol">
                   <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="drobilka" command=""/>
                </property>
                <scripts/>
             </objectView>
-            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_trends" posx="705.0" posy="55.0" width="169.0" height="33.0" angle="0" lock="false" text="трендлар" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
+            <objectView class="tesla.scada2.model.objects.PressButtonView" name="btn_trends" posx="705.0" posy="4.0" width="169.0" height="33.0" angle="0" lock="false" text="трендлар" textcolor="0x000000ff" fillcolor="0xccccccff" type3d="1" fonttype="0" fontsize="0" textplacement="1" animation="true" underline="false">
                <property key="buttoncontrol">
                   <property class="tesla.scada2.model.properties.ButtonControlProperty" functiontype="6" value="0" title="Введите значение" screenname="trendlar" command=""/>
                </property>
